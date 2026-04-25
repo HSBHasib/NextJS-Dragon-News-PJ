@@ -5,7 +5,6 @@ import Marquee from "react-fast-marquee";
 
 const BreakingNews = async () => {
   const newsData = await newsTitle();
-  console.log("i am news bhia ..........", newsData);
   
   return (
     <div className='max-w-3/4 mx-auto flex px-2 py-4 bg-gray-50 rounded-xs my-6 shadow-xs'>

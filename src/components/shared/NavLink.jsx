@@ -7,7 +7,6 @@ import React from 'react'
 const NavLink = ({href, children}) => {
     const pathname = usePathname();
     const isActive = href === pathname;
-    console.log('pathname = ', pathname);
   return (
     <div>
       <Link className={`${isActive && 'border-b-2 border-purple-500'}`} href={href}>{children}</Link>
