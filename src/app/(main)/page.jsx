@@ -1,4 +1,5 @@
 import LeftSide from "@/components/HomePage/LeftSide";
+import RightSide from "@/components/HomePage/RightSide";
 import { categoriesData } from "@/lib/DataFetch";
 
 
@@ -10,10 +11,6 @@ export default async function Home() {
       <div className="grid grid-cols-4 gap-4">
         {/* Left Side */}
         <div className="col-span-1">
-          {/* <h1 className="text-[#403F3F] font-semibold mb-3">All Caterogy</h1>
-            {
-              categoryData.news_category.map(data => <LeftSide key={data.category_id} catData={data}  />)
-            } */}
             <LeftSide categoryData={categoryData} isActive={null} />
         </div>
 
@@ -23,8 +20,8 @@ export default async function Home() {
         </div>
 
         {/* Right Side */}
-         <div className="col-span-1 bg-blue-500">
-         <h1 className="text-[#403F3F] font-semibold mb-3">Right Side</h1>
+         <div className="col-span-1">
+         <RightSide/>
         </div>
       </div>
     </div>
