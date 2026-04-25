@@ -2,13 +2,13 @@ import Link from "next/link";
 import React from "react";
 import personLogo from "@/assets/user.png";
 import Image from "next/image";
-import NavLink from "./NavLink";
+import NavLink from "../../components/shared/NavLink";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center w-3/4 mx-auto  my-4">
+    <div className="flex justify-between items-center  mx-auto my-4">
       {/* Item-1 */}
-      <div></div>
+      <div>hi</div>
 
       {/* Item-2 */}
       <div className="text-[#706F6F] text-[15px] flex items-center gap-4">
