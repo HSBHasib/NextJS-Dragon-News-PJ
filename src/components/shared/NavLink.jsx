@@ -1,17 +1,19 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { redirect, usePathname } from 'next/navigation'
 import React from 'react'
 
-const NavLink = ({href, children, className}) => {
-    // const pathname = usePathname;
-    // console.log('pathname = ', pathname)
+const NavLink = ({href, children}) => {
+    const pathname = usePathname();
+    const isActive = href === pathname;
+    console.log('pathname = ', pathname);
   return (
     <div>
-      <Link href={href}>{children}</Link>
+      <Link className={`${isActive && 'border-b-2 border-purple-500'}`} href={href}>{children}</Link>
     </div>
   )
 }
 
 export default NavLink
+

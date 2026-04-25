@@ -9,8 +9,8 @@ const Header = () => {
       <Image 
         src={headerLogo}
         alt='headerLogo'
-        width={300}
-        height={300}
+        width={350}
+        height={350}
         className='mx-auto'
       />
       <p className="text-[#706F6F]">Journalism Without Fear or Favour</p>
