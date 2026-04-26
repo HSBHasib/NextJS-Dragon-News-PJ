@@ -38,3 +38,4 @@ const categoryPage = async ({params}) => {
 }
 
 export default categoryPage
+
