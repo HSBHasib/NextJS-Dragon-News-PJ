@@ -1,14 +1,33 @@
-import { categoryWiseData } from '@/lib/DataFetch';
+import LeftSide from "@/components/HomePage/LeftSide";
+import NewsCards from "@/components/HomePage/NewsCards";
+import RightSide from "@/components/HomePage/RightSide";
+import { categoriesData, categoryWiseData } from "@/lib/DataFetch";
 import React from 'react'
 
 const categoryPage = async ({params}) => {
   const {id} = await params;
+
+  const categoryData = await categoriesData();
   const catData = await categoryWiseData(id);
-  console.log('Category is = ', catData);
-  
+
   return (
-    <div>
-      <h1>Hi, I am details page</h1>
+    <div className="w-3/4 mx-auto my-15">
+      <div className="grid grid-cols-4 gap-4">
+        {/* Left Side */}
+        <div className="col-span-1">
+            <LeftSide categoryData={categoryData} isActive={id} />
+        </div>
+
+        {/* News Section */}
+        <div className="col-span-2">
+          <NewsCards catData={catData} />
+        </div>
+
+        {/* Right Side */}
+         <div className="col-span-1">
+         <RightSide/>
+        </div>
+      </div>
     </div>
   )
 }
