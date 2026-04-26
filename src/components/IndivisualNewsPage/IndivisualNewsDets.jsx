@@ -3,7 +3,8 @@ import React from 'react'
 const IndivisualNewsDets = () => {
   return (
     <div>
-      Hi I am Indivisual NewsDets Page
+        <h1 className='text-[#403F3F] font-bold '>Dragon News</h1>
+        
     </div>
   )
 }
