@@ -1,5 +1,9 @@
 import React from 'react'
 
+export const metadata = {
+  title: "Dragon News - About Page",
+};
+
 const AboutPage = () => {
   return (
     <div className='flex justify-center items-center my-10'>

@@ -19,6 +19,6 @@ export const categoryWiseData = async (id) => {
 export const indivisualNewData = async (id) => {
     const res = await fetch(`https://openapi.programming-hero.com/api/news/${id}`);
     const data = await res.json();
-    return data;
+    return data.data[0];
 }
 

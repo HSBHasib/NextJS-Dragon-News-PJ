@@ -4,7 +4,6 @@ import React from 'react'
 import { FaArrowLeft } from 'react-icons/fa'
 
 const IndivisualNewsDets = ({data}) => {
-  console.log("IndivisualNewsDets page = ", data.total_view);
   return (
     <div>
       <h1 className='text-[#403F3F] font-bold mb-2 '>Dragon News</h1>

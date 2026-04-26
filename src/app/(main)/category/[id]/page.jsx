@@ -4,6 +4,11 @@ import RightSide from "@/components/HomePage/RightSide";
 import { categoriesData, categoryWiseData } from "@/lib/DataFetch";
 import React from 'react'
 
+export const metadata = {
+  title: "Dragon News - All News Category",
+  description: "Best news portal in bangladesh",
+};
+
 const categoryPage = async ({params}) => {
   const {id} = await params;
 
