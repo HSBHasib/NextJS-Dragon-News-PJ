@@ -53,7 +53,7 @@ const ShowNewsCardInfo = ({data}) => {
         <p className="text-[#706F6F] text-sm leading-6 mt-6  line-clamp-4">
           {data.details}
         </p>
-        <Link href="/">
+        <Link href={`/news/${data._id}`}>
           <button className="text-[#FF8C47] font-semibold text-sm mt-2 hover:underline">
             Read More
           </button>
@@ -74,7 +74,7 @@ const ShowNewsCardInfo = ({data}) => {
         </div>
         <div className="flex items-center gap-2 text-[#706F6F]">
           <FaRegEye className="text-lg" />
-          <span className="text-sm font-medium">499</span>
+          <span className="text-sm font-medium">{data.total_view}</span>
         </div>
       </div>
     </div>
