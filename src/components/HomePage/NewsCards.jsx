@@ -8,7 +8,7 @@ const NewsCards = ({catData}) => {
     <div>
         <h1 className="text-[#403F3F] font-semibold mb-3.25">Dragon News Home</h1>
         {
-        catData.data.length > 0 ? catData.data.map(data => <ShowNewsCardInfo data={data} /> ) : <NotFound />
+        catData.data.length > 0 ? catData.data.map((data, idx) => <ShowNewsCardInfo key={idx} data={data} /> ) : <NotFound />
         }
 
     </div>
