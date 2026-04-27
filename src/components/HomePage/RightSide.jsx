@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import { FaGoogle, FaGithub } from "react-icons/fa";
@@ -13,21 +13,19 @@ import Image from "next/image";
 import { authClient } from "@/lib/auth-client";
 
 const RightSide = () => {
-    // google SingUp
+  // google SingUp
   const googleSingUp = async () => {
     const data = await authClient.signIn.social({
       provider: "google",
     });
-
-    console.log('google data is = ', data);
   };
 
-    // Github   
+  // Github
   const githubSingUp = async () => {
     const data = await authClient.signIn.social({
-        provider: "github"
-    })
-  }
+      provider: "github",
+    });
+  };
 
   return (
     <div>
@@ -35,13 +33,18 @@ const RightSide = () => {
       <div className="space-y-8">
         {/* Login With Social Media Accounts */}
         <div className="space-y-2">
-        <button onClick={() => googleSingUp()} className="active:scale-95 cursor-pointer w-full flex justify-center items-center gap-1.5 text-[12px] py-1 font-medium border-[1.5px] text-blue-500 rounded-sm">
+          <button
+            onClick={() => googleSingUp()}
+            className="active:scale-95 cursor-pointer w-full flex justify-center items-center gap-1.5 text-[12px] py-1 font-medium border-[1.5px] text-blue-500 rounded-sm"
+          >
             <FaGoogle /> Login with Google
-        </button>
-        <button onClick={() => githubSingUp()} className="active:scale-95 cursor-pointer w-full flex justify-center items-center gap-1.5 text-[12px] py-1 font-medium border-[1.5px] rounded-sm">
+          </button>
+          <button
+            onClick={() => githubSingUp()}
+            className="active:scale-95 cursor-pointer w-full flex justify-center items-center gap-1.5 text-[12px] py-1 font-medium border-[1.5px] rounded-sm"
+          >
             <FaGithub /> Login with Github
-        </button>
-          
+          </button>
         </div>
 
         <div>
