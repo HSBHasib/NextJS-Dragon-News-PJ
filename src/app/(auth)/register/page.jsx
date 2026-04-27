@@ -7,8 +7,8 @@ const RegisterPage = () => {
    const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className="h-screen flex justify-center mb-14 mt-4">
-      <div className="bg-white h-full px-15 shadow-xs rounded-xs text-[#403F3F] flex flex-col justify-center">
+    <div className="h-screen flex justify-center bg-[#F3F3F3] pb-10">
+      <div className="bg-white h-full px-15 shadow-xs rounded-xs text-[#403F3F] flex flex-col justify-center ">
         <div className="px-10">
           <h1 className="text-2xl font-semibold mb-7">Register your account</h1>
         </div>

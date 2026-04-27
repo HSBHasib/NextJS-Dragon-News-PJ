@@ -3,7 +3,7 @@ import Navbar from '../(main)/Navbar'
 
 const AuthLayout = ({children}) => {
   return (
-    <div className='h-full pt-6 bg-[#F3F3F3]'>
+    <div className='h-screen py-6 bg-[#F3F3F3]'>
       <Navbar/>
       {children}
     </div>

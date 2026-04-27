@@ -2,6 +2,7 @@ import React from "react";
 import personLogo from "@/assets/user.png";
 import Image from "next/image";
 import NavLink from "../../components/shared/NavLink";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -19,7 +20,9 @@ const Navbar = () => {
       {/* Item-3 */}
       <div className="flex items-center gap-2">
         <Image src={personLogo} alt="personLogo" width={28} height={28} />
-        <button className="text-[15px] btn bg-[#403F3F] px-8 text-white font-semibold rounded-xs cursor-pointer">Login</button>
+        <Link href='/login'>
+          <button className="text-[15px] btn bg-[#403F3F] px-8 text-white font-semibold rounded-xs cursor-pointer">Login</button>
+        </Link>
       </div>
     </div>
   );
