@@ -17,13 +17,13 @@ const RegisterPage = () => {
   } = useForm();
 
   const formHandaler = async (data) => {
-    const { name, email, password, photoUrl } = data;
+    const { name, email, password, image } = data;
 
     const { data: dets, error } = await authClient.signUp.email({
       name,
       email,
       password,
-      image: photoUrl,
+      image,
       callbackURL: "/login",
     });
 
@@ -100,7 +100,7 @@ const RegisterPage = () => {
               type="text"
               className="input bg-[#F3F3F3]"
               placeholder="Enter your photo url"
-              {...register("phtotUrl")}
+              {...register("image")}
             />
             <p className="text-[#706F6F]">Optional</p>
           </fieldset>
