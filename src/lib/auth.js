@@ -8,6 +8,7 @@ const db = client.db('Dragon-News');
 export const auth = betterAuth({
     emailAndPassword: { 
     enabled: true, 
+    autoSignIn: false,
   },
 
   database: mongodbAdapter(db, {

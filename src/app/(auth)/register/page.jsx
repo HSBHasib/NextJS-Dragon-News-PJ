@@ -13,6 +13,7 @@ const RegisterPage = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -24,7 +25,7 @@ const RegisterPage = () => {
       email,
       password,
       image,
-      callbackURL: "/login",
+      // callbackURL: "/login",
     });
 
     // Success
@@ -40,6 +41,7 @@ const RegisterPage = () => {
         theme: "light",
         transition: Bounce,
       });
+      reset();
     }
 
     // Error

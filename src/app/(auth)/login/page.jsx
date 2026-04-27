@@ -28,7 +28,7 @@ const LoginPage = () => {
       email,
       password,
       rememberMe: true,
-      // callbackURL: "/",
+      callbackURL: "/",
     });
 
     console.log("Data is = ", dets);
