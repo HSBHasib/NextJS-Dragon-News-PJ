@@ -27,9 +27,6 @@ const RegisterPage = () => {
       callbackURL: "/login",
     });
 
-    console.log("Data is = ", dets);
-    console.log("Error is = ", error);
-
     // Success
     if (dets) {
       toast.success("Register Successful", {

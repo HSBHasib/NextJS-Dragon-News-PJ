@@ -34,8 +34,8 @@ const Navbar = () => {
           (<>
           <div className="flex items-center gap-2">
             <p className="text-[#706F6F] font-medium text-sm">Welcome, {user.name}</p>
-            <div className="w-14 h-14">
-              <Image className="rounded-full object-cover h-full w-full" src={user.image} alt="personImg" width={34} height={34} />
+            <div className="w-12 h-12">
+              <Image className="rounded-full object-cover h-full w-full" src={user.image || personLogo} alt="personImg" width={30} height={30} />
             </div>
           </div>
           <Link href='/login'>
