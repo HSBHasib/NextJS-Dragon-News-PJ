@@ -16,11 +16,11 @@ const LoginPage = () => {
       console.log(data);
       const { email, password } = data;
   
-      const { data: dets, error } = await authClient.signUp.email({
-        name: name,
-        email: email,
-        password: password,
-        callbackURL: '/login',
+      const { data: dets, error } = await authClient.signIn.email({
+        email,
+        password,
+        rememberMe: true,
+        callbackURL: '/',
       });
   
       console.log("Data is = ",dets);
