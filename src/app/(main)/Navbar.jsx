@@ -38,7 +38,7 @@ const Navbar = () => {
               <Image className="rounded-full object-cover h-full w-full" src={user.image || personLogo} alt="personImg" width={30} height={30} />
             </div>
           </div>
-          <Link href='/login'>
+          <Link href='/category/01'>
             <button onClick={() => authClient.signOut()} className="text-[15px] btn bg-[#403F3F] px-8 text-white font-semibold rounded-xs cursor-pointer">LogOut</button>
           </Link>
           </>)
