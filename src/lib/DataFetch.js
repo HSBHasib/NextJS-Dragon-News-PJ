@@ -5,7 +5,8 @@ export const categoriesData = async () => {
 }
 
 export const newsTitle = async () => {
-    const res = await fetch('http://localhost:3000/news.json', {cache:"no-store"});
+    // const res = await fetch('http://localhost:3000/news.json', {cache:"no-store"});
+    const res = await fetch('https://04-dragon-news-pj.vercel.app/news.json', {cache:"no-store"});
     const data = await res.json();
     return data;
 }
