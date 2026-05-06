@@ -5,7 +5,7 @@ export const categoriesData = async () => {
 }
 
 export const newsTitle = async () => {
-    const res = await fetch('http://localhost:3000/news.json');
+    const res = await fetch('http://localhost:3000/news.json', {cache:"no-store"});
     const data = await res.json();
     return data;
 }
